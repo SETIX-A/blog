@@ -8,7 +8,7 @@ tags:
 description: Learn how to add LaTeX equations in Astro blog posts using Markdown, KaTeX, and remark/rehype plugins.
 ---
 
-This document demonstrates how to use LaTeX equations in your Markdown files for AstroPaper. LaTeX is a powerful typesetting system often used for mathematical and scientific documents.
+本文档演示了如何在 AstroPaper 的 Markdown 文件中使用 LaTeX 公式。LaTeX 是一个强大的排版系统，通常用于数学和科学文档。
 
 <figure>
   <img
@@ -16,23 +16,23 @@ This document demonstrates how to use LaTeX equations in your Markdown files for
     alt="Free Close-up of complex equations on a chalkboard, showcasing chemistry and math symbols. Stock Photo"
   />
   <figcaption class="text-center">
-    Photo by <a href="https://www.pexels.com/photo/close-up-of-complicated-equations-written-on-a-blackboard-22690748/">Vitaly Gariev</a>
+    摄影：<a href="https://www.pexels.com/photo/close-up-of-complicated-equations-written-on-a-blackboard-22690748/">Vitaly Gariev</a>
   </figcaption>
 </figure>
 
-## Table of contents
+## 目录
 
-## Instructions
+## 操作指南
 
-In this section, you will find instructions on how to add support for LaTeX in your Markdown files for AstroPaper.
+在本节中，你将了解如何在 AstroPaper 的 Markdown 文件中添加 LaTeX 支持的步骤。
 
-1. Install the necessary remark and rehype plugins by running:
+1. 通过运行以下命令安装必需的 remark 和 rehype 插件：
 
    ```bash
    pnpm install rehype-katex remark-math katex
    ```
 
-2. Update the Astro configuration to use the these plugins:
+2. 更新 Astro 配置以使用这些插件：
 
    ```ts file=astro.config.ts
    // ...
@@ -58,7 +58,7 @@ In this section, you will find instructions on how to add support for LaTeX in y
    });
    ```
 
-3. Import KaTeX CSS in the main layout file
+3. 在主布局文件中导入 KaTeX CSS
 
    ```astro file=src/layouts/Layout.astro
    ---
@@ -82,7 +82,7 @@ In this section, you will find instructions on how to add support for LaTeX in y
    </body>
    ```
 
-4. As the last step, add a text-color for `katex` in `typography.css`.
+4. 最后一步，在 `typography.css` 中为 `katex` 添加文本颜色。
 
    ```css file=src/styles/typography.css
    @plugin "@tailwindcss/typography";
@@ -101,37 +101,37 @@ In this section, you will find instructions on how to add support for LaTeX in y
    }
    ```
 
-And _voilà_, this setup allows you to write LaTeX equations in your Markdown files, which will be rendered properly when the site is built. Once you do it, the rest of the document will appear rendered correctly.
+瞧！这样设置之后，你就可以在 Markdown 文件中编写 LaTeX 公式了，构建站点时这些公式会被正确渲染。完成上述步骤后，文档的其余部分将正确显示。
 
 ---
 
-## Inline Equations
+## 行内公式
 
-Inline equations are written between single dollar signs `$...$`. Here are some examples:
+行内公式写在单个美元符号 `$...$` 之间。以下是一些示例：
 
-1. The famous mass-energy equivalence formula: `$E = mc^2$`
-2. The quadratic formula: `$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$`
-3. Euler's identity: `$e^{i\pi} + 1 = 0$`
+1. 著名的质能等价公式：`$E = mc^2$`
+2. 二次方程求根公式：`$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$`
+3. 欧拉恒等式：`$e^{i\pi} + 1 = 0$`
 
 ---
 
-## Block Equations
+## 块级公式
 
-For more complex equations or when you want the equation to be displayed on its own line, use double dollar signs `$$...$$`:
+对于更复杂的公式，或者当你希望公式独占一行显示时，使用双美元符号 `$$...$$`：
 
-The Gaussian integral:
+高斯积分：
 
 ```bash
 $$ \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi} $$
 ```
 
-The definition of the Riemann zeta function:
+黎曼 zeta 函数的定义：
 
 ```bash
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} $$
 ```
 
-Maxwell's equations in differential form:
+麦克斯韦方程组的微分形式：
 
 ```bash
 $$
@@ -146,11 +146,11 @@ $$
 
 ---
 
-## Using Mathematical Symbols
+## 使用数学符号
 
-LaTeX provides a wide range of mathematical symbols:
+LaTeX 提供了丰富的数学符号：
 
-- Greek letters: `$\alpha$`, `$\beta$`, `$\gamma$`, `$\delta$`, `$\epsilon$`, `$\pi$`
-- Operators: `$\sum$`, `$\prod$`, `$\int$`, `$\partial$`, `$\nabla$`
-- Relations: `$\leq$`, `$\geq$`, `$\approx$`, `$\sim$`, `$\propto$`
-- Logical symbols: `$\forall$`, `$\exists$`, `$\neg$`, `$\wedge$`, `$\vee$`
+- 希腊字母：`$\alpha$`、`$\beta$`、`$\gamma$`、`$\delta$`、`$\epsilon$`、`$\pi$`
+- 运算符：`$\sum$`、`$\prod$`、`$\int$`、`$\partial$`、`$\nabla$`
+- 关系符：`$\leq$`、`$\geq$`、`$\approx$`、`$\sim$`、`$\propto$`
+- 逻辑符号：`$\forall$`、`$\exists$`、`$\neg$`、`$\wedge$`、`$\vee$`

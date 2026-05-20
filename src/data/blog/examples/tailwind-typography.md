@@ -10,18 +10,18 @@ tags:
 description: "EXAMPLE POST: About Tailwind Typography Plugin and how you can use it effectively."
 ---
 
-> This article is from [TailwindLabs](https://tailwindcss-typography.vercel.app/). I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.
+> 这篇文章来自 [TailwindLabs](https://tailwindcss-typography.vercel.app/)。我将此文放在这里，是为了演示如何使用 AstroPaper 主题撰写博客文章。
 
-By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+默认情况下，Tailwind 会移除段落、标题、列表等的所有默认浏览器样式。这对于构建应用 UI 来说非常有用，因为你花在撤销用户代理样式上的时间更少，但当你确实只是想为来自 CMS 或 Markdown 文件的富文本编辑器中的内容设置样式时，它会令人惊讶和不直观。
 
-We get lots of complaints about it actually, with people regularly asking us things like:
+我们实际上收到了很多关于此问题的抱怨，经常有人问我们这样的问题：
 
-> Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
-> We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
+> 为什么 Tailwind 移除了我的 `h1` 元素上的默认样式？我该如何禁用它？你说我还会失去所有其他基础样式是什么意思？
+> 我们听到了你的声音，但我们不认为仅仅禁用我们的基础样式是你真正想要的。你不想每次在仪表板 UI 中使用 `p` 元素时都要移除烦人的边距。而且我也怀疑你真的希望你的博客文章使用用户代理样式——你希望它们看起来很棒，而不是很难看。
 
-The `@tailwindcss/typography` plugin is our attempt to give you what you _actually_ want, without any of the downsides of doing something stupid like disabling our base styles.
+`@tailwindcss/typography` 插件是我们为你提供你真正想要的东西的尝试，而没有任何像禁用基础样式这样愚蠢的做法所带来的负面影响。
 
-It adds a new `prose` class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:
+它添加了一个新的 `prose` 类，你可以将其应用于任何原生 HTML 内容块，并将其变成一篇排版精美、格式良好的文档：
 
 ```html
 <article class="prose">
@@ -40,138 +40,110 @@ It adds a new `prose` class that you can slap on any block of vanilla HTML conte
 </article>
 ```
 
-For more information about how to use the plugin and the features it includes, [read the documentation](https://github.com/tailwindcss/typography/blob/master/README.md).
+有关如何使用该插件及其包含的功能的更多信息，请[阅读文档](https://github.com/tailwindcss/typography/blob/master/README.md)。
 
 ---
 
-## What to expect from here on out
+## 接下来你将看到什么
 
-What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and even italics_.
+接下来只是一大堆我写的废话，用来自己测试这个插件本身。它涵盖了我能想到的每一种合理的排版元素，比如**粗体文本**、无序列表、有序列表、代码块、块引用，*甚至斜体*。
 
-It's important to cover all of these use cases for a few reasons:
+覆盖所有这些用例很重要，原因如下：
 
-1. We want everything to look good out of the box.
-2. Really just the first reason, that's the whole point of the plugin.
-3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
+1. 我们希望一切在开箱即用时看起来都很好。
+2. 其实只有第一个原因，这才是这个插件的全部意义所在。
+3. 不过这里有一个第三个假装的理由，因为有三个项目的列表比有两个项目的列表看起来更真实。
 
-Now we're going to try out another header style.
+现在我们要尝试另一种标题样式。
 
-### Typography should be easy
+### 排版应该很简单
 
-So that's a header for you — with any luck if we've done our job correctly that will look pretty reasonable.
+所以那是一个给你的标题——如果幸运的话，我们的工作做得正确，它看起来会相当合理。
 
-Something a wise person once told me about typography is:
+一个智者曾经告诉我关于排版的事情是：
 
-> Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
-> It's probably important that images look okay here by default as well:
+> 如果你不想让你的东西看起来像废话，排版就非常重要。
 
-<figure>
-  <img
-    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
-    alt=""
-  />
-  <figcaption>
-    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-    classical Latin literature from 45 BC, making it over 2000 years old.
-  </figcaption>
-</figure>
+也许没那么优美，但确实是真的。
 
-Now I'm going to show you an example of an unordered list to make sure that looks good, too:
+当然，人们不总是在谈论为什么排版很重要之类的东西。
 
-- So here is the first item in this list.
-- In this example we're keeping the items short.
-- Later, we'll use longer, more complex list items.
+---
 
-And that's the end of this section.
+## 代码应该看起来像代码
 
-## What if we stack headings?
-
-### We should make sure that looks good, too.
-
-Sometimes you have headings directly underneath each other. In those cases you often have to undo the top margin on the second heading because it usually looks better for the headings to be closer together than a paragraph followed by a heading should be.
-
-### When a heading comes after a paragraph …
-
-When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let's see what a more complex list would look like.
-
-- **I often do this thing where list items have headings.**
-
-  For some reason I think this looks cool which is unfortunate because it's pretty annoying to get the styles right.
-
-  I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn't write this way.
-
-- **Since this is a list, I need at least two items.**
-
-  I explained what I'm doing already in the previous list item, but a list wouldn't be a list if it only had one item, and we really want this to look realistic. That's why I've added this second list item so I actually have something to look at when writing the styles.
-
-- **It's not a bad idea to add a third item either.**
-
-  I think it probably would've been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.
-
-After this sort of list I usually have a closing statement or paragraph, because it kinda looks weird jumping right to a heading.
-
-## Code should look okay by default.
-
-I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box, even with no syntax highlighting.
-
-Here's what a default `tailwind.config.js` file looks like at the time of writing:
+这很容易做到，而且 Tailwind 在这方面做得很好。它只是使用等宽字体。
 
 ```js
-module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
-};
+const add = (a, b) => a + b;
+const subtract = (a, b) => a - b;
+const multiply = (a, b) => a * b;
+const divide = (a, b) => a / b;
+console.log(add(2, 2));
+console.log(subtract(2, 2));
+console.log(multiply(2, 2));
+console.log(divide(2, 2));
 ```
 
-Hopefully that looks good enough to you.
+然而，我们仍然需要确保行内代码看起来很合理，就像我想告诉你关于 `<span>` 元素或 `@tailwindcss/typography` 的好消息那样。
 
-### What about nested lists?
+---
 
-Nested lists basically always look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.
+## 列表
 
-1. **Nested lists are rarely a good idea.**
-   - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
-   - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
-   - Nesting tons of folders in your source code is also not helpful.
-2. **Since we need to have more items, here's another one.**
-   - I'm not sure if we'll bother styling more than two levels deep.
-   - Two is already too much, three is guaranteed to be a bad idea.
-   - If you nest four levels deep you belong in prison.
-3. **Two items isn't really a list, three is good though.**
-   - Again please don't nest lists if you want people to actually read your content.
-   - Nobody wants to look at this.
-   - I'm upset that we even have to bother styling this.
+由于 Markdown 可以生成很多列表，我们需要确保它们看起来不错。
 
-The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
+- 这是一个无序列表。
+- 它有两项。
+- 但这里有三项了。
 
-- **For example, here's another nested list.**
+### 有序列表
 
-  But this time with a second paragraph.
-  - These list items won't have `<p>` tags
-  - Because they are only one line each
+1. 这是一项。
+2. 那是另一项。
+3. 你猜对了，第三项。
 
-- **But in this second top-level list item, they will.**
+---
 
-  This is especially annoying because of the spacing on this paragraph.
-  - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
+## 我们甚至为嵌套列表提供了样式
 
-    This is the second line I'm talking about by the way.
+很多人以为嵌套列表是糟糕的 HTML，但他们错了。
 
-  - Finally here's another list item so it's more like a list.
+1. **关于列表有很多话要说。**
+   - 我不确定我们是否会费心去为超过两层的嵌套设置样式。
+   - 两层已经太多了，三层肯定是馊主意。
+   - 如果你嵌套四层，你就该进监狱了。
+2. **只有两项不算是一个真正的列表，不过三个就很好。**
+   - 再说一遍，如果你想让人真正阅读你的内容，请不要嵌套列表。
+   - 没有人想看这个。
+   - 我很沮丧我们甚至不得不为此设置样式。
 
-- A closing list item, but with no nested list, because why not?
+Markdown 中关于列表最烦人的事情是，`<li>` 元素不会被赋予子 `<p>` 标签，除非该列表项中有多个段落。这意味着我也必须担心为那种烦人的情况设置样式。
 
-And finally a sentence to close off this section.
+- **例如，这里是另一个嵌套列表。**
 
-## There are other elements we need to style
+  但这次有第二段。
+  - 这些列表项不会有 `<p>` 标签
+  - 因为它们每项只有一行
 
-I almost forgot to mention links, like [this link to the Tailwind CSS website](https://tailwindcss.com). We almost made them blue but that's so yesterday, so we went with dark gray, feels edgier.
+- **但在这个第二层顶级列表项中，它们会有。**
 
-We even included table styles, check it out:
+  这尤其烦人，因为这段的间距问题。
+  - 正如你在这里看到的，因为我添加了第二行，这个列表项现在有了 `<p>` 标签。
+
+    这就是我说的第二行。
+
+  - 最后这里是另一个列表项，这样看起来更像一个列表。
+
+- 一个收尾的列表项，但没有嵌套列表，为什么不呢？
+
+最后用一句话来结束这一节。
+
+## 还有其他元素需要设置样式
+
+我差点忘了提到链接，比如[这个指向 Tailwind CSS 网站的链接](https://tailwindcss.com)。我们差点把它们做成蓝色的，但那太老土了，所以我们用了深灰色，感觉更前卫。
+
+我们甚至还包括了表格样式，看看吧：
 
 | Wrestler                | Origin       | Finisher           |
 | ----------------------- | ------------ | ------------------ |
@@ -181,26 +153,26 @@ We even included table styles, check it out:
 | Vader                   | Boulder, CO  | Vader Bomb         |
 | Razor Ramon             | Chuluota, FL | Razor's Edge       |
 
-We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
+我们还需要确保行内代码看起来不错，比如我想谈论 `<span>` 元素或告诉你关于 `@tailwindcss/typography` 的好消息。
 
-### Sometimes I even use `code` in headings
+### 有时候我甚至在标题中使用 `code`
 
-Even though it's probably a bad idea, and historically I've had a hard time making it look good. This _"wrap the code blocks in backticks"_ trick works pretty well though really.
+尽管这可能是个坏主意，而且历史上我很难让它看起来好看。不过这个「把代码块包在反引号里」的技巧确实相当好用。
 
-Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the [`tailwindcss/docs`](https://github.com/tailwindcss/docs) repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
+我过去做的另一件事是把 `code` 标签放在链接里面，比如我想告诉你关于 [`tailwindcss/docs`](https://github.com/tailwindcss/docs) 仓库。我不太喜欢反引号下面有下划线，但避免它所需付出的疯狂代价绝对不值得。
 
-#### We haven't used an `h4` yet
+#### 我们还没用过 `h4`
 
-But now we have. Please don't use `h5` or `h6` in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a `before` pseudo-element to scream at you if you use an `h5` or `h6`.
+但现在我们用了。请不要在你的内容中使用 `h5` 或 `h6`，Medium 只支持两个标题层级是有原因的，你们这些家伙。老实说，我曾考虑过使用 `before` 伪元素，在你使用 `h5` 或 `h6` 时对你尖叫。
 
-We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it _smaller_ than the body copy? No thanks.
+我们默认完全不设置它们的样式，因为 `h4` 元素已经很小了，它们跟正文一样大。我们还能对 `h5` 做什么，把它变得比正文还小？不了，谢谢。
 
-### We still need to think about stacked headings though.
+### 不过我们仍然需要考虑堆叠标题的问题。
 
-#### Let's make sure we don't screw that up with `h4` elements, either.
+#### 让我们确保也不会搞砸 `h4` 元素。
 
-Phew, with any luck we have styled the headings above this text and they look pretty good.
+呼，幸运的话，我们已经为这段文字上方的标题设置了样式，它们看起来应该还不错。
 
-Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
+让我们在这里添加一个收尾段落，这样内容以一段大小合适的文本块结束。我无法解释为什么我希望以这种方式结束，但我猜是因为我觉得如果标题离文档末尾太近，会看起来很奇怪或不平衡。
 
-What I've written here is probably long enough, but adding this final sentence can't hurt.
+我在这里写的应该已经够长了，但加上这最后一句话也无妨。

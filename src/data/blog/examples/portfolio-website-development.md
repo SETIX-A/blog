@@ -16,90 +16,90 @@ description:
 timezone: "Asia/Yangon"
 ---
 
-> This article is originally from my [blog post](https://satnaing.dev/blog/posts/how-do-i-develop-my-portfolio-and-blog). I put this article to demonstrate how you can write blog posts/articles using AstroPaper theme.
+> 这篇文章最初来自我的[博客文章](https://satnaing.dev/blog/posts/how-do-i-develop-my-portfolio-and-blog)。我将此文放在这里，是为了演示如何使用 AstroPaper 主题撰写博客文章。
 
-My experience about developing my first portfolio website and a blog using NextJS and a headless CMS.
+我使用 NextJS 和无头 CMS 开发第一个作品集网站和博客的经历。
 
 ![Building portfolio](https://satnaing.dev/_ipx/w_2048,q_75/https%3A%2F%2Fres.cloudinary.com%2Fnoezectz%2Fimage%2Fupload%2Fv1653050141%2FSatNaing%2Fblog_at_cafe_ei1wf4.jpg?url=https%3A%2F%2Fres.cloudinary.com%2Fnoezectz%2Fimage%2Fupload%2Fv1653050141%2FSatNaing%2Fblog_at_cafe_ei1wf4.jpg&w=2048&q=75)
 
-## Motivation
+## 动机
 
-I've been always thinking about launching my own website with my custom domain name (**satnaing.dev**) since my college student life. But that never happened until this project. I've done several projects and works about web application development but I didn't make an effort to do this.
+从我上大学时起，我就一直想着推出自己的网站并使用自己的域名（**satnaing.dev**）。但直到这个项目之前，这从未实现。我做过几个关于 Web 应用开发的项目和作品，但没有为此付出努力。
 
-So, "what about blog?" you may ask. Yeah, blog also has been in my project list for some time. I always wanted to make a blog project using some of the latest technologies. However, I've been busy with my works and other projects so that blog project has never been started.
+那么你可能会问：「那博客呢？」。是的，博客也一直是我项目清单上的一项。我一直想使用一些最新的技术来做一个博客项目。然而，我一直忙于工作和其他项目，所以博客项目从未启动。
 
-In these days, I tend to develop my own projects with the focus in good quality rather than quantity. After the project is done, I usually put a proper readme file in the GitHub repo. But GitHub repo readme is only suitable for technical aspects (this is just my thought). I want to write down my experiences and challenges. Thus, I decided to make my own blog. Plus, at this point, I have decent experiences and confidence to develop this project.
+这些日子里，我更倾向于以质量而非数量为核心来开发自己的项目。项目完成后，我通常会在 GitHub 仓库中放一份像样的 README 文件。但 GitHub 仓库的 README 只适合技术层面（这只是我的想法）。我想记录下我的经历和挑战。因此，我决定做自己的博客。而且，到了这个阶段，我已经有了相当多的经验和信心来完成这个项目。
 
-## Tech Stack
+## 技术栈
 
-For the front-end, I wanted to use [React](https://reactjs.org/ "React Official Website"). But React alone is not good enough for SEO; and I did have to consider many factors like routing, image optimization etc. So, I chose [NextJS](https://nextjs.org/ "NextJS Official Website") as my main front-end stack. And of course TypeScript for type checking. (It's said that you'll love TypeScript when you're used to it 😉)
+对于前端，我想使用 [React](https://reactjs.org/ "React Official Website")。但仅靠 React 对 SEO 不够友好；而且我还必须考虑路由、图片优化等许多因素。因此，我选择了 [NextJS](https://nextjs.org/ "NextJS Official Website") 作为我的主要前端框架。当然还有 TypeScript 用于类型检查。（据说一旦你习惯了 TypeScript，你就会爱上它 😉）
 
-For styling, I use [TailwindCSS](https://tailwindcss.com/ "Tailwind CSS Official Website"). This is because I love developer experience that Tailwind gives and it has a lot of flexibilities compared to other component UI libraries like MUI or React Bootstrap.
+样式方面，我使用 [TailwindCSS](https://tailwindcss.com/ "Tailwind CSS Official Website")。这是因为我喜欢 Tailwind 提供的开发者体验，而且相比其他组件 UI 库（如 MUI 或 React Bootstrap），它具有很大的灵活性。
 
-All contents of this project reside within the GitHub repository. All my blog posts (including this one) are written in Markdown file format since I'm very used to with this. But to write Markdown along with its frontmatter effortlessly, I use [Forestry](https://forestry.io/ "Forestry Official Website") headless CMS. It is a git-based CMS that can serve Markdown and other contents. Because of this, I can write my contents either using Markdown or wysiwyg editor. Besides, writing frontmatters with this is a breeze.
+这个项目的所有内容都存放在 GitHub 仓库中。我的所有博客文章（包括这一篇）都是用 Markdown 文件格式编写的，因为我已经非常习惯这种格式。但为了轻松地编写 Markdown 及其 frontmatter，我使用了 [Forestry](https://forestry.io/ "Forestry Official Website") 无头 CMS。它是一个基于 Git 的 CMS，可以处理 Markdown 和其他内容。因此，我可以使用 Markdown 或所见即所得编辑器来编写内容。此外，用它来编写 frontmatter 简直轻而易举。
 
-Images and assets are uploaded and stored in [Cloudinary](https://cloudinary.com/ "Cloudinary Official Website"). I connect Cloudinary via Forestry and manage them directly in the dashboard.
+图片和资源上传并存储在 [Cloudinary](https://cloudinary.com/ "Cloudinary Official Website") 中。我通过 Forestry 连接 Cloudinary，并直接在后台管理它们。
 
-In conclusion, these are the tech stack I've used for this project.
+总结来说，以下是我在这个项目中使用的技术栈：
 
-- Front-end: NextJS (TypeScript)
-- Styling: TailwindCSS
-- Animations: GSAP
-- CMS: Forestry Headless CMS
-- Deployment: Vercel
+- 前端：NextJS（TypeScript）
+- 样式：TailwindCSS
+- 动画：GSAP
+- CMS：Forestry 无头 CMS
+- 部署：Vercel
 
-## Features
+## 功能特性
 
-The following are certain features of my portfolio and blog
+以下是我的作品集和博客的一些功能特性：
 
-### SEO Friendly
+### SEO 友好
 
-The entire project is developed with SEO focus in mind. I've used proper meta tags, descriptions and heading alignments. This website is now indexed by Google.
+整个项目以 SEO 为核心进行开发。我使用了适当的元标签、描述和标题层次。这个网站现在已经被 Google 收录了。
 
-> You can search this website on google by using keywords like 'sat naing dev'
+> 你可以通过搜索关键词「sat naing dev」在 Google 上找到这个网站
 
 ![searching satnaing.dev on google](https://res.cloudinary.com/noezectz/image/upload/v1648231400/SatNaing/satnaing-on-google_asflq6.png "satnaing.dev is indexed")
 
-Moreover, this website will be displayed well when shared to social media due to properly used meta tags.
+此外，由于正确使用了元标签，当分享到社交媒体时，这个网站也能很好地展示。
 
 ![satnaing.dev card layout when shared to Facebook](https://res.cloudinary.com/noezectz/image/upload/v1653106955/SatNaing/satnaing-dev-share-on-facebook_1_zjoehx.png "Card layout when shared to Facebook")
 
-### Dynamic Sitemap
+### 动态站点地图
 
-Sitemap plays an important part in SEO. Because of this, every single page of this site should be included in sitemap.xml. I made an auto generated sitemap in my website whenever I create a new content or tags or categories.
+站点地图在 SEO 中扮演着重要角色。因此，这个网站的每一页都应包含在 sitemap.xml 中。每当创建新的内容、标签或分类时，我的网站都会自动生成站点地图。
 
-### Light & Dark Themes
+### 亮色与暗色主题
 
-Due to dark theme trend in recent years, many websites include dark theme out of the box nowadays. Certainly, my website also supports light & dark themes.
+由于近年来暗色主题的流行趋势，如今许多网站都内置了暗色主题。当然，我的网站也支持亮色和暗色主题。
 
-### Fully Accessible
+### 完全可访问
 
-This website is fully accessible. You can navigate around by only using keyboard. I put all a11y enhancement best practices like including alt text in all images, no skipping headings, using semantic HTML tags, using aria-attributes properly.
+这个网站是完全可访问的。你只需使用键盘就能浏览整个网站。我遵循了所有 a11y 增强最佳实践，包括为所有图片添加 alt 文本、不跳过标题层级、使用语义化 HTML 标签、正确使用 aria 属性。
 
-### Search box, Categories & Tags
+### 搜索框、分类与标签
 
-All blog contents can be searched by search box. Moreover, contents can be filtered by categories and tags. In this way, blog readers can search and read what they really want.
+所有博客内容都可以通过搜索框搜索。此外，内容还可以按分类和标签进行筛选。这样，博客读者可以搜索和阅读他们真正想要的内容。
 
-### Performance and Lighthouse Score
+### 性能与 Lighthouse 评分
 
-This website got very good performance and lighthouse score thanks to proper development and best practices. Here's the lighthouse score for this website.
+得益于得当的开发和最佳实践，这个网站获得了非常好的性能和 Lighthouse 评分。以下是该网站的 Lighthouse 评分：
 
 ![satnaing.dev Lighthouse score](https://user-images.githubusercontent.com/53733092/159957822-7082e459-11e9-4616-8f1e-49d0881f7cbb.png "satnaing.dev Lighthouse score")
 
-### Animations
+### 动画
 
-Initially I used [Framer Motion](https://www.framer.com/motion/ "Framer Motion") to add animations and micro interactions for this website. However, when I tried to use some complex animations and parallax effects, I found it inconvenient to integrate with Framer Motion (Maybe I'm not very good at and used to working with it). Hence, I decided to use [GSAP](https://greensock.com/ "GSAP Animation Library") for all of my animations. It is one of the most popular animation library and it is capable of doing complex and advanced animations. You can see animations and micro interactions on pretty much every page of this website.
+最初我使用 [Framer Motion](https://www.framer.com/motion/ "Framer Motion") 来为网站添加动画和微交互。然而，当我尝试使用一些复杂的动画和视差效果时，我发现与 Framer Motion 的集成并不方便（也许我不是很擅长也不太习惯使用它）。因此，我决定使用 [GSAP](https://greensock.com/ "GSAP Animation Library") 来处理所有动画。它是最流行的动画库之一，能够实现复杂和高级的动画效果。你几乎可以在这个网站的每个页面上看到动画和微交互。
 
 ![animations at satnaing.dev](https://res.cloudinary.com/noezectz/image/upload/v1653108324/SatNaing/ezgif.com-gif-maker_2_hehtlm.gif "satnaing.dev website")
 
-## Outro
+## 结语
 
-In conclusion, this project gives me a lot of experience and confidence about developing blog site (SSG). Now, I have gained knowledge of git-based CMS and how it interacts with NextJS. I've also learned about SEO, dynamic sitemap generation and indexing Google procedures. I will make better projects in the future. So, stay tuned! ✌🏻
+总之，这个项目让我在开发博客网站（SSG）方面积累了很多经验和信心。现在，我已经掌握了基于 Git 的 CMS 及其如何与 NextJS 交互的知识。我还学习了 SEO、动态站点地图生成和 Google 收录流程。未来我会做出更好的项目。敬请期待！✌🏻
 
-And... last but not least, I would like to say 'thanks' to my friend [Swann Fevian Kyaw](https://www.facebook.com/bon.zai.3910 "Swann Fevian Kyaw's Facebook Account") (@[ToonHa](https://www.facebook.com/ToonHa-102639465752883 "ToonHa Facebook Page")) who has drawn a beautiful illustration for my hero section of the website.
+还有……最后但同样重要的是，我想对我的朋友 [Swann Fevian Kyaw](https://www.facebook.com/bon.zai.3910 "Swann Fevian Kyaw's Facebook Account")（@[ToonHa](https://www.facebook.com/ToonHa-102639465752883 "ToonHa Facebook Page")）说声「谢谢」，他为我网站的 Hero 区域绘制了一幅精美的插画。
 
-## Project Links
+## 项目链接
 
-- Website: [https://satnaing.dev/](https://satnaing.dev/ "https://satnaing.dev/")
-- Blog: [https://satnaing.dev/blog](https://satnaing.dev/blog "https://satnaing.dev/blog")
-- Repo: [https://github.com/satnaing/my-portfolio](https://github.com/satnaing/my-portfolio "https://github.com/satnaing/my-portfolio")
+- 网站：[https://satnaing.dev/](https://satnaing.dev/ "https://satnaing.dev/")
+- 博客：[https://satnaing.dev/blog](https://satnaing.dev/blog "https://satnaing.dev/blog")
+- 仓库：[https://github.com/satnaing/my-portfolio](https://github.com/satnaing/my-portfolio "https://github.com/satnaing/my-portfolio")

@@ -14,8 +14,8 @@ description:
   fringilla est
 ---
 
-Users cannot see this post because it is in draft.
+用户无法看到这篇文章，因为它处于草稿状态。
 
-## Motivation
+## 动机
 
 rec 1
